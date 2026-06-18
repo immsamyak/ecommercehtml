@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvicx Store | Minimal E-Commerce</title>
+  <meta name="description" content="Discover premium, minimal products at Alvicx Store. Shop electronics, clothing, and accessories.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Additional Premium Styles for Landing Page */
+    .features-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 3rem 5%;
+      background-color: #f9f9f9;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .feature-item {
+      text-align: center;
+      flex: 1;
+    }
+    .feature-item i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+    .feature-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature-item p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+    
+    .category-section {
+      padding: 4rem 5%;
+    }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .category-card {
+      position: relative;
+      height: 400px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 2rem;
+      text-decoration: none;
+    }
+    .category-card img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: transform 0.5s ease;
+    }
+    .category-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+      z-index: 2;
+    }
+    .category-card:hover img {
+      transform: scale(1.05);
+    }
+    .category-content {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+    }
+    .category-content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .category-content p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .promo-section {
+      display: flex;
+      align-items: center;
+      background-color: var(--accent-color);
+      color: #fff;
+      margin: 4rem 5%;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .promo-content {
+      flex: 1;
+      padding: 4rem;
+    }
+    .promo-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .promo-content p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+    .promo-image {
+      flex: 1;
+      height: 100%;
+      min-height: 400px;
+      background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .newsletter {
+      text-align: center;
+      padding: 5rem 5%;
+      background-color: #f9f9f9;
+    }
+    .newsletter h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .newsletter p {
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+    .newsletter-form {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Alvicx Store</a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <a href="account.html"><i class="fa-regular fa-user"></i></a>
+      <a href="cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">2</span>
+      </a>
+    </div>
+  </header>
+
+  <main style="padding: 0; min-height: auto;">
+    <section class="container hero" style="padding: 6rem 5%;">
+      <div class="hero-content">
+        <h1 style="font-size: 4rem; line-height: 1.1;">Elevate Your Everyday Essentials.</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 2.5rem;">Discover our curated collection of premium electronics, minimal clothing, and timeless accessories designed for modern living.</p>
+        <a href="products.html" class="btn" style="padding: 1rem 2rem; font-size: 1.1rem;">Shop Collection</a>
+      </div>
+      <div class="hero-image" style="box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800&q=80" alt="Minimalist setup">
+      </div>
+    </section>
+
+    <!-- Features Banner -->
+    <div class="features-banner">
+      <div class="feature-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h4>Free Global Shipping</h4>
+        <p>On all orders over $100</p>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-rotate-left"></i>
+        <h4>30-Day Returns</h4>
+        <p>No questions asked policy</p>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>Secure Payments</h4>
+        <p>100% secure encrypted checkout</p>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-headset"></i>
+        <h4>24/7 Support</h4>
+        <p>Dedicated customer service</p>
+      </div>
+    </div>
+
+    <!-- Shop by Category -->
+    <section class="category-section">
+      <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 1rem;">Shop by Category</h2>
+      <p class="text-center" style="color: var(--text-light); margin-bottom: 3rem;">Explore our diverse range of premium products.</p>
+      <div class="category-grid">
+        <a href="products.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80" alt="Electronics">
+          <div class="category-content">
+            <h3>Electronics</h3>
+            <p>Cutting-edge tech for your home and office.</p>
+          </div>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1489987707023-afc66601bda1?w=800&q=80" alt="Clothing">
+          <div class="category-content">
+            <h3>Apparel</h3>
+            <p>Minimalist, high-quality everyday wear.</p>
+          </div>
+        </a>
+        <a href="products.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=800&q=80" alt="Accessories">
+          <div class="category-content">
+            <h3>Accessories</h3>
+            <p>The perfect accents to complete your look.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container" style="padding: 4rem 5%;">
+      <h2 class="text-center mb-2" style="font-size: 2.5rem;">Featured Products</h2>
+      <div class="product-grid" id="featured-products">
+        
+        <div class="product-card">
+          <a href="product-detail.html" class="product-image">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Wireless Headphones">
+          </a>
+          <div class="product-info">
+            <span class="product-category">Electronics</span>
+            <a href="product-detail.html"><h3 class="product-title">Wireless Headphones</h3></a>
+            <div class="product-price">$199.99</div>
+            <a href="cart.html" class="btn btn-outline" style="width:100%; display:block; text-align:center;">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="product-detail.html" class="product-image">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80" alt="Classic T-Shirt">
+          </a>
+          <div class="product-info">
+            <span class="product-category">Clothing</span>
+            <a href="product-detail.html"><h3 class="product-title">Classic T-Shirt</h3></a>
+            <div class="product-price">$24.99</div>
+            <a href="cart.html" class="btn btn-outline" style="width:100%; display:block; text-align:center;">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="product-detail.html" class="product-image">
+            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=500&q=80" alt="Leather Wallet">
+          </a>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <a href="product-detail.html"><h3 class="product-title">Leather Wallet</h3></a>
+            <div class="product-price">$49.99</div>
+            <a href="cart.html" class="btn btn-outline" style="width:100%; display:block; text-align:center;">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <a href="product-detail.html" class="product-image">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&q=80" alt="Sunglasses">
+          </a>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <a href="product-detail.html"><h3 class="product-title">Sunglasses</h3></a>
+            <div class="product-price">$89.99</div>
+            <a href="cart.html" class="btn btn-outline" style="width:100%; display:block; text-align:center;">Add to Cart</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Promo Section -->
+    <div class="promo-section">
+      <div class="promo-content">
+        <h2>The Summer Collection is Here.</h2>
+        <p>Discover lightweight fabrics, vibrant colors, and effortless style perfect for the warm months ahead.</p>
+        <a href="products.html" class="btn" style="background-color: #fff; color: var(--accent-color);">Explore Collection</a>
+      </div>
+      <div class="promo-image"></div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2>Join the Alvicx Community</h2>
+      <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+
+  </main>
+
+  <footer style="margin-top: 0; border-top: none;">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Alvicx Store</h3>
+        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem;">Premium essentials for the modern lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="products.html">Electronics</a></li>
+          <li><a href="products.html">Clothing</a></li>
+          <li><a href="products.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Alvicx Store. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

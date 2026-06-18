@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | Alvicx Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Alvicx Store</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <a href="account.html" class="active"><i class="fa-solid fa-user"></i></a>
+      <a href="cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">2</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="page-title">My Account</h1>
+      <div class="cart-layout">
+        <div class="cart-summary-container" style="flex: 1;">
+          <div class="cart-summary">
+            <ul style="line-height: 2.5;">
+              <li><a href="#" style="font-weight: 600; color: var(--text-color);">Profile Settings</a></li>
+              <li><a href="#" style="color: var(--text-light);">Order History</a></li>
+              <li><a href="#" style="color: var(--text-light);">Wishlist</a></li>
+              <li><a href="login.html" style="color: var(--error-color);">Log Out</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cart-items-container" style="flex: 3;">
+          <div class="form-container" style="max-width: 100%; margin: 0;">
+            <h3 style="margin-bottom: 1.5rem;">Profile Settings</h3>
+            <form action="account.html">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" value="John Doe">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" value="john@example.com">
+              </div>
+              <button type="submit" class="btn">Update Profile</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+Products Database
+
+ID: 1 
+Name: Wireless Headphones 
+Category: Electronics 
+Price: 199.99 
+Stock: 45 units 
+Colors: Black, Silver
+Details: High-quality noise-canceling wireless headphones with 30-hour battery life, over-ear design, and Bluetooth 5.2 connectivity.
+
+ID: 2 
+Name: Smartphone Pro 
+Category: Electronics 
+Price: 899.99 
+Stock: 12 units
+Storage: 256GB, 512GB
+Colors: Midnight Blue, Space Gray
+Details: Latest flagship smartphone with stunning 6.7" OLED display, 108MP triple camera setup, and all-day battery.
+
+ID: 3 
+Name: Classic T-Shirt 
+Category: Clothing 
+Price: 24.99 
+Stock: 120 units
+Sizes: S, M, L, XL, XXL
+Colors: White, Black, Gray
+Details: Comfortable 100% organic cotton classic t-shirt, pre-shrunk, and ethically manufactured.
+
+ID: 4 
+Name: Denim Jacket 
+Category: Clothing 
+Price: 79.99 
+Stock: 34 units
+Sizes: S, M, L, XL
+Colors: Vintage Blue, Black
+Details: Stylish and durable denim jacket with button closure, adjustable waist tabs, and multiple pockets.
+
+ID: 5 
+Name: Leather Wallet 
+Category: Accessories 
+Price: 49.99 
+Stock: 85 units
+Material: Genuine Leather
+Colors: Brown, Black
+Details: Premium genuine leather wallet with 8 card slots, 2 cash compartments, and RFID blocking technology.
+
+ID: 6 
+Name: Sunglasses 
+Category: Accessories 
+Price: 89.99 
+Stock: 60 units
+Size: One Size
+Colors: Tortoise, Black
+Details: Polarized sunglasses with 100% UV400 protection, lightweight frame, and anti-reflective coating.
+
+Orders Database
+(Empty)

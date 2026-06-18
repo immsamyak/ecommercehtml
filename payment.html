@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | Alvicx Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Alvicx Store</a>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="page-title">Payment</h1>
+      <div class="form-container">
+        <h3 style="margin-bottom: 1.5rem;">Credit Card Details</h3>
+        <form id="payment-form" action="confirmation.html">
+          <div class="form-group">
+            <label>Name on Card</label>
+            <input type="text" required>
+          </div>
+          <div class="form-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="XXXX XXXX XXXX XXXX" required>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <div class="form-group" style="flex:1;">
+              <label>Expiry (MM/YY)</label>
+              <input type="text" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group" style="flex:1;">
+              <label>CVC</label>
+              <input type="text" placeholder="123" required>
+            </div>
+          </div>
+          <button type="submit" class="btn" style="width: 100%;" id="pay-btn">Pay Now</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
