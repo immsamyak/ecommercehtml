@@ -5,19 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Cart | Alvicx Store</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .cart-layout {
-      display: flex;
-      gap: 3rem;
-      margin-top: 2rem;
-    }
-    .cart-items-container {
-      flex: 2;
-    }
-    .cart-summary-container {
-      flex: 1;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -59,33 +46,33 @@
                 <tr>
                   <td>
                     <div class="cart-item-flex">
-                      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Wireless Headphones" style="width: 60px; height: 60px; object-fit: cover;">
-                      <div style="font-weight: 500;">Wireless Headphones</div>
+                      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Wireless Headphones" class="img-60">
+                      <div class="fw-500">Wireless Headphones</div>
                     </div>
                   </td>
                   <td>$199.99</td>
                   <td>1</td>
-                  <td style="font-weight: 600;">$199.99</td>
+                  <td class="fw-600">$199.99</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="cart-summary-container">
             <div class="cart-summary">
-              <h3 style="margin-bottom: 1.5rem; font-size: 1.2rem;">Order Summary</h3>
-              <div class="summary-row" style="display:flex; justify-content:space-between; margin-bottom:1rem;">
+              <h3 class="mb-1-5 fs-1-2">Order Summary</h3>
+              <div class="summary-row d-flex justify-between mb-1">
                 <span>Subtotal</span>
                 <span>$199.99</span>
               </div>
-              <div class="summary-row" style="display:flex; justify-content:space-between; margin-bottom:1rem;">
+              <div class="summary-row d-flex justify-between mb-1">
                 <span>Shipping</span>
                 <span>Free</span>
               </div>
-              <div class="summary-row summary-total" style="display:flex; justify-content:space-between; border-top:1px solid #e5e5e5; padding-top:1rem; font-weight:bold; font-size:1.2rem;">
+              <div class="summary-row summary-total d-flex justify-between border-top pt-1 fw-bold fs-1-2">
                 <span>Total</span>
                 <span>$199.99</span>
               </div>
-              <a href="checkout.html" class="btn" style="width: 100%; margin-top: 1.5rem; display:block; text-align:center;">Proceed to Checkout</a>
+              <a href="checkout.html" class="btn w-100 mt-1-5 block text-center">Proceed to Checkout</a>
             </div>
           </div>
         </div>
@@ -93,8 +80,8 @@
     </div>
   </main>
 
-  <footer>
-    <div class="footer-bottom" style="margin-top:0;">
+  <footer class="footer-no-margin">
+    <div class="footer-bottom">
       &copy; 2026 Alvicx Store. All rights reserved.
     </div>
   </footer>
